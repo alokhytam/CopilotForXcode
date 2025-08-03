@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teks Berjalan</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0f0f0f;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .marquee-wrapper {
+      width: 100%;
+      overflow: hidden;
+      background: #202020;
+      border-top: 2px solid #7f00ff;
+      border-bottom: 2px solid #7f00ff;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      z-index: 999;
+    }
+
+    .marquee {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100%;
+      animation: scroll-left 12s linear infinite;
+      font-size: 16px;
+    }
+
+    @keyframes scroll-left {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="marquee-wrapper">
+    <div class="marquee">
+      🔔 Gunakan jasa midman XIOO agar terhindar dari penipuan! 🔒
+    </div>
+  </div>
+
+</body>
+</html>
